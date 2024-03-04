@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-24T16:35:39 IST" name="Default suite" finished-at="2024-02-24T16:35:52 IST" duration-ms="13793">
+    <groups>
+    </groups>
+    <test started-at="2024-02-24T16:35:39 IST" name="Default test" finished-at="2024-02-24T16:35:52 IST" duration-ms="13793">
+      <class name="APIAutomation.DynamicJsonWithDataProvider">
+        <test-method signature="addbook(java.lang.String,java.lang.String)[pri:0, instance:APIAutomation.DynamicJsonWithDataProvider@2805d709]" started-at="2024-02-24T16:35:39 IST" name="addbook" data-provider="BookData" finished-at="2024-02-24T16:35:52 IST" duration-ms="13448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raga]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8786]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addbook -->
+        <test-method signature="addbook(java.lang.String,java.lang.String)[pri:0, instance:APIAutomation.DynamicJsonWithDataProvider@2805d709]" started-at="2024-02-24T16:35:52 IST" name="addbook" data-provider="BookData" finished-at="2024-02-24T16:35:52 IST" duration-ms="157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ragb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8787]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addbook -->
+        <test-method signature="addbook(java.lang.String,java.lang.String)[pri:0, instance:APIAutomation.DynamicJsonWithDataProvider@2805d709]" started-at="2024-02-24T16:35:52 IST" name="addbook" data-provider="BookData" finished-at="2024-02-24T16:35:52 IST" duration-ms="134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raga]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8788]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addbook -->
+      </class> <!-- APIAutomation.DynamicJsonWithDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
