@@ -20,7 +20,7 @@ public class APIBasics4EndToEndTest {
 		 * address --> Validate address is updated just validated respone message may
 		 * not be enough
 		 *
-		 * Learning Add variable to string In json add ""+" or ""+""
+		 * Learning in this--> Add variable to string In json add ""+" or ""+""
 		 */
 
 //Step1: Create a place
@@ -43,11 +43,8 @@ public class APIBasics4EndToEndTest {
 		String newAdress = "70 Summer walk, USA xyz";
 
 		given().queryParam("key", "qaclick123").header("Content-Type", "application/json")
-				.body("{\r\n"
-						+ "\"place_id\":\""+placeid+"\",\r\n"
-						+ "\"address\":\""+newAdress+"\",\r\n"
-						+ "\"key\":\"qaclick123\"\r\n"
-						+ "}")
+				.body("{\r\n" + "\"place_id\":\"" + placeid + "\",\r\n" + "\"address\":\"" + newAdress + "\",\r\n"
+						+ "\"key\":\"qaclick123\"\r\n" + "}")
 				.when().put("maps/api/place/update/json").then().assertThat().log().all().statusCode(200)
 				.body("msg", equalTo("Address successfully updated"));
 
@@ -56,7 +53,8 @@ public class APIBasics4EndToEndTest {
 		String updateResponsejson = given().queryParam("key", "qaclick123").queryParam("place_id", placeid).when()
 				.get("maps/api/place/get/json").then().assertThat().statusCode(200).extract().response().asString();
 
-		//For below line we can utilize "ReusableMethods.convertRawResponseToJson" as well 
+		// For below line we can utilize "ReusableMethods.convertRawResponseToJson" as
+		// well
 		JsonPath jsnupdate = new JsonPath(updateResponsejson);
 		String updatedadress = jsnupdate.getString("address");
 
@@ -65,7 +63,5 @@ public class APIBasics4EndToEndTest {
 		System.out.println(updatedadress);
 
 	}
-
-
 
 }

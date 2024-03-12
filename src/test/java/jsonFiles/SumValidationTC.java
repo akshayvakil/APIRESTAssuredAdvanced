@@ -5,7 +5,14 @@ import org.testng.annotations.Test;
 
 import io.restassured.path.json.JsonPath;
 
-public class SumValidation {
+public class SumValidationTC {
+	
+	/**
+	 * Here we are validating Total bill amount
+	 * We are not htting json 
+	 * We are just checking response json and validating if it is correct
+	 * 
+	 */
 	
 	
 	@Test
