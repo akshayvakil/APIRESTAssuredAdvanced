@@ -5,7 +5,7 @@ import io.restassured.filter.session.SessionFilter;
 
 import static io.restassured.RestAssured.*;
 
-public class JiraTest {
+public class JiraTestSessionFilter {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
