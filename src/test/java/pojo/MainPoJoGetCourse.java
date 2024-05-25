@@ -20,7 +20,7 @@ public class MainPoJoGetCourse {
 	// varibles names should be exactly as in response error else getMethod will reuturn null
 	private String services;
 	private String experties;
-	private Courses courses; // Course class is created since it has sub nodes in {} braces
+	private Courses courses; // Course class is created since it has sub nodes in {} braces ,inside course list is created
 	private String instructor;
 	private String linkedIn;
 	private String url;
