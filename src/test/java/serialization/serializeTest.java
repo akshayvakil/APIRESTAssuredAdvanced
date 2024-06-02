@@ -13,7 +13,7 @@ public class serializeTest {
 	
 	/**
 	 * Serialization where setters are used to convertJSON to javaObject
-	 * we need not have to use json file
+	 * we need NOT have to use json file
 	 * object will be converted  to json by REST Assured
 	 *
 	 * @param args
