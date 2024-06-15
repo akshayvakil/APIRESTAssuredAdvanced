@@ -95,9 +95,6 @@ public class serializeTest {
 				 * .when().post("/maps/api/place/add/json")
 				.then().assertThat().statusCode(200).extract().response();
 				 */
-		
-		
-		
 
 
 	}
