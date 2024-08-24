@@ -59,7 +59,6 @@ public class serializeTest {
 		addPlacejson.setTypes(typelist);
 		
 		
-		
 	
 		//STEP1 Create Object of Request specificationBuilder 
 		//Common things are included included in this page.
