@@ -3,7 +3,7 @@ package readExcelForRESTAPI;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class testSample {
+public class ReadExcelandFetchedValueinThisClass {
 
 	public static void main(String[] args) throws IOException {
 //Create Object of class as below

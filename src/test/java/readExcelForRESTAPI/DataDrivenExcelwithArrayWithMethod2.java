@@ -13,9 +13,9 @@ import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class DataDrivenExcelwithArrayWithMethod {
+public class DataDrivenExcelwithArrayWithMethod2 {
 	
-	public ArrayList<String> getDatafromExcel(String testCaseName) throws IOException {
+	public ArrayList<String> getDatafromExcel(String testCaseName, String sheetName) throws IOException {
 		ArrayList<String> arrayListfromExcel = new ArrayList<String>();
 
 		// Identify header column inside which your value is present e.g. TestCase
@@ -45,7 +45,7 @@ public class DataDrivenExcelwithArrayWithMethod {
 		int NoofSheets = workbook.getNumberOfSheets();
 		for (int i = 0; i < NoofSheets; i++) {
 			//testData is sheet name hardcoded 
-			if (workbook.getSheetName(i).equals("testData")) {
+			if (workbook.getSheetName(i).equals(sheetName)) {
 				XSSFSheet sheet = workbook.getSheetAt(i);
 
 				// Step3:Get access to all rows of sheet; sheet is collection of rows
